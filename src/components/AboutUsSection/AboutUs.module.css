@@ -1,0 +1,50 @@
+.aboutSection {
+  width: 100%;
+  background-color: #e1e1e1;
+  padding: 8rem 4rem;
+  font-size: 1.6rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row img {
+  flex: 1;
+  width: 50%;
+  height: 35rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.text h3 {
+  font-size: 2rem;
+}
+
+.aboutSection h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row img {
+    order: -1;
+    width: 100%;
+  }
+  .text {
+    margin-bottom: 3rem;
+  }
+}
