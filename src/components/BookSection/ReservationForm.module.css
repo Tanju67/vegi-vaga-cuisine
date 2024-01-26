@@ -1,0 +1,71 @@
+.reservation {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #e1e1e1;
+  font-family: "Indie Flower", cursive;
+}
+
+.reservation form {
+  width: 70%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translate(-50%, 0%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 8rem;
+  text-align: center;
+}
+.reservation span {
+  text-align: start;
+  font-size: 1.4rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reservation button {
+  margin-top: 3rem;
+  border: none;
+  background-color: #47c747;
+  width: 30rem;
+  color: #fff;
+  padding: 1rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.headerPart {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+}
+
+.headerPart svg {
+  font-size: 8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .reservation {
+    min-height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .reservation form {
+    width: 100%;
+    position: relative;
+  }
+}

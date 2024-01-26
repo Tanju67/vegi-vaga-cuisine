@@ -1,0 +1,48 @@
+.footer {
+  padding: 4rem 8rem;
+  font-size: 1.4rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.row {
+  display: flex;
+}
+
+.address {
+  flex: 2;
+}
+
+.program {
+  flex: 2;
+}
+
+.socialMediaIcon {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.footer h1 a {
+  color: #47c747;
+}
+
+.footer h1 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .footer h1 {
+    text-align: center;
+  }
+  .socialMediaIcon {
+    width: 100%;
+  }
+}

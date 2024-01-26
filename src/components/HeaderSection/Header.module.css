@@ -1,0 +1,89 @@
+.header {
+  min-height: 85vh;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gloria Hallelujah", cursive;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.3),
+      rgba(255, 255, 255, 1)
+    ),
+    url("../../assets/main.jpg") center/cover no-repeat fixed;
+  overflow: hidden;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: #47c747;
+  text-align: center;
+  transition: text-shadow 0.5s ease-in;
+  animation: moveInLeft 1s ease-out;
+}
+
+.heading h1:hover {
+  text-shadow: 1px 0px 20px yellow;
+}
+
+.heading p {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1rem;
+  letter-spacing: 1rem;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX();
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX();
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Gloria Hallelujah", cursive;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.3),
+        rgba(255, 255, 255, 1)
+      ),
+      url("../../assets/main.jpg") center/cover no-repeat fixed;
+    overflow: hidden;
+  }
+}

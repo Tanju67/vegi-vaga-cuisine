@@ -1,0 +1,26 @@
+.menuText {
+  position: absolute;
+  width: 70rem;
+  height: 35rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  left: 0;
+  top: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.menuText svg {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .menuText {
+    width: 100%;
+  }
+}
